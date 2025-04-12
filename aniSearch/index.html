@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animated search bar</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main{
+            height: 100vh;
+            background: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .searchConteiner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 0px 5px 6px rgb(205, 201, 201);
+            padding: 0.5em;
+        }
+
+        .searchConteiner > input{
+            width: 4em;
+            height: 3em;
+            transition: 1s all ease-in;
+            border: 2px solid;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="searchConteiner">
+            <p>icon</p>
+            <input type="search" placeholder="search" id="search">
+            <p>mic</p>
+        </div>
+    </main>
+
+    <script>
+        let back = document.querySelector(".searchConteiner");
+        let search = document.querySelector("#search");
+
+        back.addEventListener("mouseover", function(){
+            back.style.width = "20em";
+            search.style.width = "100%"
+        })
+
+        back.addEventListener("mouseleave", function(){
+            back.style.width = "7em"
+            search.style.width = "4em"
+        })
+    </script>
+</body>
+</html>
