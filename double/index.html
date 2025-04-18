@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>double landing page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body,
+      main {
+        height: 100vh;
+        overflow: hidden;
+        colo
+      }
+
+      main,
+      .info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .partA,
+      .partB {
+        width: 50%;
+        height: 100vh;
+        transition: 1s all ease-in-out;
+        position: relative;
+
+        &:hover {
+          width: 80%;
+        }
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .info {
+        position: absolute;
+        top: 20%;
+        flex-direction: column;
+        background: transparent;
+        backdrop-filter: blur(50px);
+        width: 100%;
+        border: 1px rgb(44, 44, 40) solid;
+        gap:1em;
+      }
+
+      button{
+        width: 6em;
+        height: 3em;
+        padding: 0.5em;
+        font-size: 1em;
+
+        &:hover{
+            color: whitesmoke;
+            background: black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="partA">
+        <img
+          src="https://5.imimg.com/data5/SELLER/Default/2023/6/312743853/CM/HM/IA/4630526/apple-iphone-14-pro-max-128gb-deep-purple-mobile-phone.png"
+          alt=""
+        />
+        <div class="info">
+          <h1>buy the products</h1>
+          <button>buy</button>
+        </div>
+      </div>
+
+      <div class="partB">
+        <img
+          src="https://img-prd-pim.poorvika.com/cdn-cgi/image/width=500,height=500,quality=75/product/samsung-galaxy-z-fold-6-5g-pink-256gb-12gb-ram-back-fold.png"
+          alt=""
+        />
+        <div class="info">
+          <h1>buy the products</h1>
+          <button>buy</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
